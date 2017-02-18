@@ -1,0 +1,11 @@
+package Pages;
+
+import org.openqa.selenium.support.PageFactory;
+import PornTest.porn.BaseTest;
+
+public class BasePage 
+{
+   public BasePage(){
+	   PageFactory.initElements(BaseTest.driver, this);
+   }
+}

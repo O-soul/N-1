@@ -1,0 +1,22 @@
+package BrowserFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BrowserSetup {
+
+	static WebDriver driver;
+	
+	public static WebDriver getDriver(String browser){		
+		switch(browser){
+		case "fox":
+		driver = new FirefoxDriver();
+		case "chrome":
+		System.setProperty("webdriver.chrome.driver", "/porn/src/main/java/resource/chromedriver.exe");
+		driver = new ChromeDriver();                 // /porn/src/main/java/resource/chromedriver.exe
+		}	
+		return driver;
+	}
+	
+}

@@ -1,0 +1,14 @@
+package Utilities;
+
+import org.openqa.selenium.WebElement;
+
+
+public class Utils {
+
+	public static void sleep(int seconds) {
+		try {
+			Thread.sleep(seconds*100);
+		} 
+		catch (InterruptedException e) {}
+	}
+}

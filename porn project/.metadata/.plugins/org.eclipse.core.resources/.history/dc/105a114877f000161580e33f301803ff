@@ -1,0 +1,27 @@
+package Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import Utilities.Utils;
+
+public class MainPage extends BasePage{
+
+	@FindBy(xpath = "//a[@href='/anal_porno_online/']")
+	private WebElement analLink;
+	
+	@FindBy(xpath = "//a[contains(@href,'trahaet-v-zhopu-uchilku')]/img")
+	private WebElement teacherFuckinkLink;
+	
+	public MainPage(){
+		
+	}
+	
+	public MainPage clickTeacherFuckinkLink(){
+		Utils.sleep(7);
+		analLink.click();
+		Utils.sleep(7);
+		teacherFuckinkLink.click();
+		return new MainPage();
+	}
+	
+}

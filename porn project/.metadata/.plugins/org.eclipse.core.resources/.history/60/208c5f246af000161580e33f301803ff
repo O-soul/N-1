@@ -1,0 +1,12 @@
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import PornTest.porn.BaseTest;
+
+public class Utils {
+
+	static WebDriverWait wait;
+	
+	public static void sleep(int seconds){
+		wait = new WebDriverWait(BaseTest.driver, seconds);
+	}
+}

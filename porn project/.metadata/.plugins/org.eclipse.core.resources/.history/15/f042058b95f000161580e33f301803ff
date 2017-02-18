@@ -1,0 +1,32 @@
+package PornTest.porn;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import Pages.MainPage;
+
+public class AnalVideoTest extends BaseTest{
+
+	MainPage mainPage;
+	
+	@BeforeTest
+	public void beforeTest(){
+		mainPage = new Pages.MainPage();
+	}
+	
+	@Test
+	public void viewAnalLink(){
+		mainPage.clickAnalLink();
+		Assert.assertTrue(condition, message);
+	}
+	
+	@Test
+	public void viewGruppovuhaLink(){
+		mainPage.clickAnalLink();
+	}
+	
+	@Test
+	public void viewStudentyLink(){
+		mainPage.clickAnalLink();
+	}
+}

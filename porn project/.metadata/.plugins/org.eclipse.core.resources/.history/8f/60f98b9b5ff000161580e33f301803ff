@@ -1,0 +1,21 @@
+package BrowserFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BrowserSetup {
+
+	WebDriver static driver;
+	
+	public static WebDriver getDriver(String browser){		
+		switch(browser){
+		case "fox":
+		driver = new FirefoxDriver();
+		case "chrome":
+		driver = new ChromeDriver();
+		}	
+		return driver;
+	}
+	
+}

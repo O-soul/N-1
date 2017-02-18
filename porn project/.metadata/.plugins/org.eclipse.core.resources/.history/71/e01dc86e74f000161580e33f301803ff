@@ -1,0 +1,26 @@
+package BrowserFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class BrowserSetup {
+
+	static WebDriver driver;
+	DesiredCapabilities caps;
+	
+	public static WebDriver getDriver(String browser){		
+		caps = new DesiredCapabilities();
+		switch(browser){
+		case "fox":
+		driver = new FirefoxDriver();
+		case "chrome":
+		System.setProperty("webdriver.chrome.driver", "src/main/java/resource/chromedriver.exe");
+		driver = new ChromeDriver();              
+		}	
+		driver.manage().window().maximize();
+		return driver;
+	}
+	
+}
