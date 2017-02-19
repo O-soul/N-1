@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Porn_test]">
+  <test name="Porn">
+    <classes>
+      <class name="porn.AnalVideoTest"/>
+    </classes>
+  </test> <!-- Porn -->
+  <test name="Porn(failed)">
+    <classes>
+      <class name="porn.AnalVideoTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="viewGruppovuhaLink"/>
+          <include name="viewStudentyLink"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- porn.AnalVideoTest -->
+    </classes>
+  </test> <!-- Porn(failed) -->
+</suite> <!-- Failed suite [Porn_test] -->

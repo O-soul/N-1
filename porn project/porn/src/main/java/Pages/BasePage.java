@@ -3,8 +3,9 @@ package Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import PornTest.porn.BaseTest;
+
 import Utilities.Utils;
+import porn.BaseTest;
 
 public class BasePage {
 
