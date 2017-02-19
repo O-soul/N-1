@@ -1,2 +1,6 @@
 *.xmi
 porn project/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_w.cfs
+*.log
+*.xmi
+porn project/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+*.log
