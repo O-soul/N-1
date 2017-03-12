@@ -32,3 +32,4 @@ Framework/development.xml
 Framework/development.xml
 Framework/logs/Selenium.log
 Framework/screenshot.png
+*.container
