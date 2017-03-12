@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	
+
 
 	<dependencies>
 		<dependency>
@@ -89,9 +89,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>sqljdbc4</artifactId>
-			<version>4.0</version>
-			<scope>runtime</scope>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>6.1.0.jre8</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
@@ -153,8 +152,8 @@
 	</dependencies>
 
 	<build>
-	  <sourceDirectory>${basedir}/src</sourceDirectory>
-      <testSourceDirectory>${basedir}/test</testSourceDirectory>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
+		<testSourceDirectory>${basedir}/test</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
