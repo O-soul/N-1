@@ -162,7 +162,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
-					<verbose>true</verbose>
+				<!--<verbose>true</verbose>-->	
 					<fork>true</fork>
 					<compilerVersion>1.8</compilerVersion>
 				</configuration>
